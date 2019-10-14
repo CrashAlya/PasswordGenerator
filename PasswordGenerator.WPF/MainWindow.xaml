@@ -4,6 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator.WPF"
+        xmlns:passwordGeneratorEnums="clr-namespace:PasswordGenerator.Enums;assembly=PasswordGenerator"
         mc:Ignorable="d"
         Title="Password Generator" Height="450" Width="800">
+    <StackPanel Margin="20">
+        <ComboBox ItemsSource="{local:EnumItemsSource {x:Type passwordGeneratorEnums:PasswordType}}" />
+    </StackPanel>
 </Window>
